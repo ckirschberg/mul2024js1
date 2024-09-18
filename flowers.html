@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flowers</title>
+  <style>
+    img {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="flowers">
+  <button id="subtract">-</button>
+  <button id="add">+</button>
+  <div id="output">0</div>
+
+  <script>
+    const subtract = document.getElementById("subtract");
+    const add = document.getElementById("add");
+    const output = document.getElementById("output");
+    let count = 0;
+
+    subtract.addEventListener("click", () => {
+      count--;
+      output.innerHTML = count;
+    });
+
+    add.addEventListener("click", () => {
+      count++;
+      output.innerHTML = count;
+    });
+  </script>
+</body>
+</html>
