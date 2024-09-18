@@ -1,3 +1,3 @@
 document.getElementById("calculate").addEventListener("click", () => {
-    alert("Hvor er Philip???")
+    alert("Hvor er Victor???")
 })
