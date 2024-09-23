@@ -7,12 +7,24 @@
       width: 300px;
     }
   </style>
+  <script src="flowersScript.js" defer></script>
 </head>
 <body>
   <img src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="flowers">
   <button id="subtract">-</button>
   <button id="add">+</button>
   <div id="output">0</div>
+
+  <template id="template">
+    <div>
+      <img id="img" src="" />
+      <div class="buttons">
+        <button id="minus-button">-</button>
+        <p id="amount">0</p>
+        <button id="add-button">+</button>
+      </div>
+    </div>
+  </template>
 
   <script>
     const subtract = document.getElementById("subtract");
