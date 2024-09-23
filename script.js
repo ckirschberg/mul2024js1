@@ -56,17 +56,13 @@ students.forEach((student) => {
 
     let temp = document.getElementById("studentTemplate");
     let clon = temp.content.cloneNode(true);
-    clon.getElementById("name").innerHTML = student.name;
-    clon.getElementById("email").innerHTML = student.email;
-    clon.getElementById("hairColor").innerHTML = student.hairColor;
-    // clon.getElementById("age").innerHTML = student.age;
+    clon.querySelector(".name").innerHTML = student.name;
+    clon.querySelector(".email").innerHTML = student.email;
+    clon.querySelector(".hairColor").innerHTML = student.hairColor;
 
-    clon.getElementById("btnAge").addEventListener("click", () => {
+    clon.querySelector(".btnAge").addEventListener("click", () => {
         alert("Hello from " + student.name + " my age is " + student.age );
     })
 
     document.getElementById("output").appendChild(clon);
-
-
-
 })
